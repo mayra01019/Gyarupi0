@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>lookbook | Gyarupi</title>
+
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+ <!-- CABEÇALHO -->
+
+    <header class="cabecalho">
+
+        <div class="logo">
+            <a href="index.html">GYARUPI</a>
+        </div>
+
+        <nav class="menu">
+            <a href="index.html">HOME</a>
+            <a href="colecao.html">COLEÇÃO</a>
+            <a href="lookbook.html">LOOKBOOK</a>
+            
+        </nav>
+
+        
+    </header>
+<section class="lookbook-area">
+
+    <p class="lookbook-subtitulo">GYARUPI PRESENTS</p>
+    <h1 class="lookbook-titulo">GYARUPI MAGAZINE ♡</h1>
+    <p class="lookbook-descricao">
+        Issue 01 · BE YOUR OWN STYLE
+    </p>
+
+    <div class="revista-container">
+
+        <div id="gyarupi-revista">
+
+<!-- ==========================================
+     CAPA DA REVISTA GYARUPI
+
+     COMO PERSONALIZAR:
+     1. Troque o texto do título abaixo.
+     2. Para colocar uma imagem, veja o exemplo comentado.
+     3. Altere as cores pelo CSS da classe .capa.
+=========================================== -->
+
+<div class="pagina capa" data-density="hard">
+
+    <!-- TEXTO PEQUENO NO TOPO: pode trocar ou apagar -->
+    <p class="capa-edicao">
+        REVISTA GYARUPI • EDIÇÃO 01
+    </p>
+
+    <!-- TÍTULO PRINCIPAL DA REVISTA -->
+    <h2>GYARUPI</h2>
+
+    <!-- SUBTÍTULO: escreva aqui o tema da edição -->
+    <p class="capa-subtitulo">
+        MODA • ESTILO • INSPIRAÇÃO
+    </p>
+
+
+    <!-- ======================================
+         IMAGEM PRINCIPAL DA CAPA
+
+         Para adicionar uma foto:
+         1. Coloque a imagem na pasta "fotoso".
+         2. Apague os símbolos abaixo.
+         3. Retire os comentários do exemplo de imagem.
+         4. Troque "capa.jpg" pelo nome do seu arquivo.
+    ======================================= -->
+
+    <div class="capa-imagem">
+
+        <!-- APAGUE ESTA LINHA QUANDO COLOCAR SUA FOTO -->
+        <span>COLOQUE A IMAGEM AQUI </span>
+
+        <!-- EXEMPLO DE IMAGEM - RETIRE OS COMENTÁRIOS:
+        <img src="fotoso/capa.jpg" alt="Capa da revista Gyarupi">
+        -->
+
+    </div>
+
+
+    <!-- FRASE OPCIONAL: você pode trocar ou apagar -->
+    <p class="capa-frase">
+        SEU ESTILO, SUAS REGRAS.
+    </p>
+
+    <span class="numero-pagina">01</span>
+
+</div>
+
+
+            <!-- PÁGINA 2 -->
+            <div class="pagina">
+                <span class="pagina-label">01 / THE STYLE</span>
+                <h2>WELCOME TO<br>OUR WORLD ♡</h2>
+                <div class="pagina-ilustracao">★ ♡ ★</div>
+                <p>
+                    bla bla bla
+                </p>
+                <p class="frase-destaque">
+                    YOUR STYLE.<br>YOUR RULES.
+                </p>
+                <span class="numero-pagina">02</span>
+            </div>
+
+            <!-- PÁGINA 3 -->
+            <div class="pagina pagina-kogal">
+                <span class="pagina-label">02 / KOGAL</span>
+                <h2>SCHOOL GIRL<br>ENERGY ☆</h2>
+                <div class="pagina-ilustracao">K♡GAL</div>
+                <p>
+                    bla bla bla
+                </p>
+                <span class="numero-pagina">03</span>
+            </div>
+
+            <!-- PÁGINA 4 -->
+            <div class="pagina pagina-agejo">
+                <span class="pagina-label">03 / AGEJO</span>
+                <h2>GLAMOUR<br>ON MAX ♡</h2>
+                <div class="pagina-ilustracao">AGEJO ✧</div>
+                <p>
+                    bla bla bla
+                </p>
+                <span class="numero-pagina">04</span>
+            </div>
+
+            <!-- PÁGINA 5 -->
+            <div class="pagina pagina-manba">
+                <span class="pagina-label">04 / MANBA</span>
+                <h2>SUNSHINE<br>AND ATTITUDE ☼</h2>
+                <div class="pagina-ilustracao">MANBA ♡</div>
+                <p>
+                    bla bla bla
+                </p>
+                <span class="numero-pagina">05</span>
+            </div>
+
+            <!-- CONTRACAPA -->
+            <div class="pagina contracapa" data-density="hard">
+                <span class="contracapa-simbolo">GYARUPI ♡</span>
+                <h2>CREATE<br>YOUR OWN<br>UNIVERSE.</h2>
+                <p>THE END? NEVER.</p>
+                <a href="colecao.html">EXPLORE A COLEÇÃO →</a>
+                <span class="numero-pagina">06</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="controles-revista">
+        <button id="revista-voltar" type="button">← ANTERIOR</button>
+        <span id="revista-contador">CAPA · 1 / 6</span>
+        <button id="revista-avancar" type="button">PRÓXIMA →</button>
+    </div>
+
+    <p class="revista-instrucao">
+        ✦ Clique nas bordas da revista ou use as setas para folhear.
+    </p>
+
+</section>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/page-flip/dist/js/page-flip.browser.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const elementoRevista = document.getElementById("gyarupi-revista");
+
+    if (!elementoRevista || !window.St) {
+        console.error("Não foi possível carregar a biblioteca da revista.");
+        return;
+    }
+
+    const revista = new St.PageFlip(elementoRevista, {
+        width: 350,
+        height: 500,
+        size: "stretch",
+        minWidth: 280,
+        maxWidth: 700,
+        minHeight: 400,
+        maxHeight: 1000,
+        showCover: true,
+        flippingTime: 800,
+        usePortrait: true,
+        drawShadow: true,
+        maxShadowOpacity: 0.35,
+        mobileScrollSupport: true
+    });
+
+    revista.loadFromHTML(
+        document.querySelectorAll("#gyarupi-revista .pagina")
+    );
+
+    const contador = document.getElementById("revista-contador");
+
+    function atualizarContador() {
+        const paginaAtual = revista.getCurrentPageIndex() + 1;
+        const totalPaginas = revista.getPageCount();
+
+        contador.textContent =
+            "PÁGINA " + paginaAtual + " / " + totalPaginas;
+    }
+
+    revista.on("flip", atualizarContador);
+
+    document.getElementById("revista-avancar").addEventListener("click", function () {
+        revista.flipNext();
+    });
+
+    document.getElementById("revista-voltar").addEventListener("click", function () {
+        revista.flipPrev();
+    });
+
+    atualizarContador();
+
+});
+</script>
+</body>
+</html>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coleção | Gyarupi</title>
+
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+
+    <header class="cabecalho">
+
+        <div class="logo">
+            <a href="index.html">GYARUPI</a>
+        </div>
+
+        <nav class="menu">
+            <a href="index.html">HOME</a>
+            <a href="colecao.html">COLEÇÃO</a>
+            <a href="lookbook.html">LOOKBOOK</a>
+            
+        </nav>
+
+        <div class="acoes">
+            <button class="botao-favoritos">♡ Favoritos</button>
+            <button class="botao-sacola">🛍 Sacola</button>
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- APRESENTAÇÃO -->
+
+        <section class="cabecalho-pagina">
+
+            <p class="subtitulo">GYARUPI SHOP</p>
+
+            <h1>COLEÇÃO</h1>
+
+            <p class="descricao-pagina">
+                Encontre o seu estilo e monte seu próprio look.
+            </p>
+
+        </section>
+
+
+        <!-- CATÁLOGO -->
+
+        <section class="catalogo">
+
+            <div class="filtros">
+
+                <button class="filtro ativo" data-filtro="todos">TODOS</button>
+                <button class="filtro" data-filtro="roupas">ROUPAS</button>
+                <button class="filtro" data-filtro="acessorios">ACESSÓRIOS</button>
+                <button class="filtro" data-filtro="bolsas">BOLSAS</button>
+
+            </div>
+
+
+            <div class="produtos">
+
+                <!-- PRODUTO 01 -->
+
+                <article class="produto roupas">
+
+                    <div class="produto-imagem">
+                        <span class="etiqueta">NEW</span>
+                        <button class="favorito" type="button">♡</button>
+                        <img src="fotoso/produto-01.jpg" alt="Produto Gyarupi">
+                    </div>
+
+                    <div class="produto-info">
+                        <p class="produto-estilo">KOGAL</p>
+                        <h3>PRODUTO 01</h3>
+                        <p class="produto-descricao">Peça estilo Kogal</p>
+                        <p class="produto-preco">R$ 199,90</p>
+
+                        <button class="adicionar-sacola" type="button">
+                            + ADICIONAR À SACOLA ♡
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUTO 02 -->
+
+                <article class="produto roupas">
+
+                    <div class="produto-imagem">
+                        <span class="etiqueta">NEW</span>
+                        <button class="favorito" type="button">♡</button>
+                        <img src="fotoso/produto-02.jpg" alt="Produto Gyarupi">
+                    </div>
+
+                    <div class="produto-info">
+                        <p class="produto-estilo">AGEJO</p>
+                        <h3>PRODUTO 02</h3>
+                        <p class="produto-descricao">Peça estilo Agejo</p>
+                        <p class="produto-preco">R$ 189,90</p>
+
+                        <button class="adicionar-sacola" type="button">
+                            + ADICIONAR À SACOLA ♡
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUTO 03 -->
+
+                <article class="produto acessorios">
+
+                    <div class="produto-imagem">
+                        <span class="etiqueta">NEW</span>
+                        <button class="favorito" type="button">♡</button>
+                        <img src="fotoso/produto-03.jpg" alt="Produto Gyarupi">
+                    </div>
+
+                    <div class="produto-info">
+                        <p class="produto-estilo">MANBA</p>
+                        <h3>PRODUTO 03</h3>
+                        <p class="produto-descricao">Acessório estilo Manba</p>
+                        <p class="produto-preco">R$ 219,90</p>
+
+                        <button class="adicionar-sacola" type="button">
+                            + ADICIONAR À SACOLA ♡
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUTO 04 -->
+
+                <article class="produto bolsas">
+
+                    <div class="produto-imagem">
+                        <span class="etiqueta">NEW</span>
+                        <button class="favorito" type="button">♡</button>
+                        <img src="fotoso/produto-04.jpg" alt="Produto Gyarupi">
+                    </div>
+
+                    <div class="produto-info">
+                        <p class="produto-estilo">GYARUPI</p>
+                        <h3>PRODUTO 04</h3>
+                        <p class="produto-descricao">Bolsa Gyarupi</p>
+                        <p class="produto-preco">R$ 199,90</p>
+
+                        <button class="adicionar-sacola" type="button">
+                            + ADICIONAR À SACOLA ♡
+                        </button>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PAINEL DE FAVORITOS -->
+
+    <div class="favoritos-fundo" id="favoritos-fundo"></div>
+
+    <aside class="painel-favoritos" id="painel-favoritos">
+
+        <div class="favoritos-topo">
+
+            <div>
+                <p class="favoritos-mini">GYARUPI LOVES ♡</p>
+                <h2>FAVORITOS</h2>
+            </div>
+
+            <button class="fechar-favoritos" id="fechar-favoritos" type="button">
+                ×
+            </button>
+
+        </div>
+
+        <div class="favoritos-conteudo" id="favoritos-conteudo">
+
+            <div class="favoritos-vazio">
+                <span>♡</span>
+                <p>Você ainda não favoritou nenhum produto.</p>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- PAINEL DA SACOLA -->
+
+    <div class="sacola-fundo" id="sacola-fundo"></div>
+
+    <aside class="painel-sacola" id="painel-sacola">
+
+        <div class="sacola-topo">
+
+            <div>
+                <p class="sacola-mini">YOUR GYARUPI ♡</p>
+                <h2>MINHA SACOLA</h2>
+            </div>
+
+            <button class="sacola-fechar" id="fechar-sacola" type="button">
+                ×
+            </button>
+
+        </div>
+
+        <div class="sacola-conteudo" id="sacola-conteudo">
+
+            <div class="sacola-vazia">
+                <span>♡</span>
+                <p>Sua sacola está vazia.</p>
+            </div>
+
+        </div>
+
+        <div class="sacola-rodape">
+
+            <div class="sacola-total-linha">
+                <span>TOTAL</span>
+                <strong id="sacola-total">R$ 0,00</strong>
+            </div>
+
+            <button class="finalizar-compra" type="button">
+                FINALIZAR COMPRA ♡
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="/index.js"></script>
+
+</body>
+</html>
